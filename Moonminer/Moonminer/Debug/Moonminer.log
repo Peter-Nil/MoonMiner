@@ -1,30 +1,18 @@
-<<<<<<< HEAD
-﻿Build started 2013-11-10 13:03:53.
+﻿Build started 2013-11-10 16:25:57.
      1>Project "\\hsnas3\StudentHome\2012\a12magfr\Desktop\GitHub\MoonMiner\Moonminer\Moonminer\Moonminer.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"\\hsnas3\StudentHome\2012\a12magfr\Desktop\GitHub\MoonMiner\SFML-2.1\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"SFML-2.1\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
          Main.cpp
+     1>\\hsnas3\studenthome\2012\a12magfr\desktop\github\moonminer\moonminer\moonminer\main.cpp(16): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>\\hsnas3\studenthome\2012\a12magfr\desktop\github\moonminer\moonminer\moonminer\main.cpp(42): warning C4018: '<' : signed/unsigned mismatch
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\hsnas3\StudentHome\2012\a12magfr\Desktop\GitHub\MoonMiner\Moonminer\Debug\Moonminer.exe" /INCREMENTAL /NOLOGO /LIBPATH:"\\hsnas3\StudentHome\2012\a12magfr\Desktop\GitHub\MoonMiner\SFML-2.1\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"\\hsnas3\StudentHome\2012\a12magfr\Desktop\GitHub\MoonMiner\Moonminer\Debug\Moonminer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\hsnas3\StudentHome\2012\a12magfr\Desktop\GitHub\MoonMiner\Moonminer\Debug\Moonminer.lib" /MACHINE:X86 Debug\Main.obj
-         LINK : \\hsnas3\StudentHome\2012\a12magfr\Desktop\GitHub\MoonMiner\Moonminer\Debug\Moonminer.exe not found or not built by the last incremental link; performing full link
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\hsnas3\StudentHome\2012\a12magfr\Desktop\GitHub\MoonMiner\Moonminer\Debug\Moonminer.exe" /INCREMENTAL /NOLOGO /LIBPATH:"SFML-2.1\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"\\hsnas3\StudentHome\2012\a12magfr\Desktop\GitHub\MoonMiner\Moonminer\Debug\Moonminer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\hsnas3\StudentHome\2012\a12magfr\Desktop\GitHub\MoonMiner\Moonminer\Debug\Moonminer.lib" /MACHINE:X86 Debug\Main.obj
+         Debug\Texturemanager.obj
+         Debug\Tile.obj
+         Debug\Windowmanager.obj
          Moonminer.vcxproj -> \\hsnas3\StudentHome\2012\a12magfr\Desktop\GitHub\MoonMiner\Moonminer\Debug\Moonminer.exe
      1>Done Building Project "\\hsnas3\StudentHome\2012\a12magfr\Desktop\GitHub\MoonMiner\Moonminer\Moonminer\Moonminer.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:09.47
-=======
-﻿Build started 2013-11-10 14:35:57.
-     1>Project "C:\Users\Laptop\Desktop\GitHub\MoonMiner\Moonminer\Moonminer\Moonminer.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"SFML-2.1\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
-         Main.cpp
-       Link:
-         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Laptop\Desktop\GitHub\MoonMiner\Moonminer\Debug\Moonminer.exe" /INCREMENTAL /NOLOGO /LIBPATH:"SFML-2.1\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Laptop\Desktop\GitHub\MoonMiner\Moonminer\Debug\Moonminer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Laptop\Desktop\GitHub\MoonMiner\Moonminer\Debug\Moonminer.lib" /MACHINE:X86 Debug\Main.obj
-         Moonminer.vcxproj -> C:\Users\Laptop\Desktop\GitHub\MoonMiner\Moonminer\Debug\Moonminer.exe
-     1>Done Building Project "C:\Users\Laptop\Desktop\GitHub\MoonMiner\Moonminer\Moonminer\Moonminer.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:10.06
->>>>>>> 3e58a03e418e4d715ca783974ca79d399715abe6
+Time Elapsed 00:00:07.77
