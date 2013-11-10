@@ -1,41 +1,55 @@
 #include <SFML/Graphics.hpp>
 #include "Texturemanager.h"
-
+#include "Windowmanager.h"
 #include <iostream>
 
+//place
+#include <vector>
+#include "Tile.h"
+#include <stdio.h>
+//-place
 using namespace std;
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-  
 
-	Texturemanager *tm = &Texturemanager::getInstance();
-	
-	sf::Sprite *test = new sf::Sprite();
-	sf::Sprite *teste = new sf::Sprite();
+	srand(time(NULL));
+	sf::RenderWindow *window = &Windowmanager::getInstance().getWindow();
 
-	test->setTexture(tm->getTexture(0));
-	teste->setTexture(tm->getTexture(1));
 
-	teste->setPosition(60,0);
-    while (window.isOpen())
+	vector<Tile*> tilevec;
+
+	for(int y = 0; y < 120;y++){
+		for(int x = 0; x < 180;x++){
+
+			tilevec.push_back(new Tile(x*6,y*6));
+		}
+
+	}
+
+    while (window->isOpen())
     {
         sf::Event event;
-        while (window.pollEvent(event))
+        while (window->pollEvent(event))
         {
             if (event.type == sf::Event::Closed)
-                window.close();
+                window->close();
         }
 
-        window.clear();
+        window->clear();
+
+
+		for(int i = 0;i < tilevec.size();i++){
+			tilevec.at(i)->draw();
+		}
+		//operations
+
        
-		window.draw(*test);
-		window.draw(*teste);
-        window.display();
+	
+        window->display();
     }
 
-
+	delete window;
 
     return 0;
 }

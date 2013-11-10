@@ -15,7 +15,7 @@ public:
 
 	static Texturemanager &getInstance();
 	sf::Texture &getTexture(int s);
-
+	int getAmount();
 protected:
 
 	Texturemanager();
