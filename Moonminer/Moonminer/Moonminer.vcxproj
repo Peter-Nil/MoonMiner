@@ -85,11 +85,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Noise.cpp" />
     <ClCompile Include="Texturemanager.cpp" />
     <ClCompile Include="Tile.cpp" />
     <ClCompile Include="Windowmanager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Noise.h" />
     <ClInclude Include="Texturemanager.h" />
     <ClInclude Include="Tile.h" />
     <ClInclude Include="Windowmanager.h" />

@@ -2,6 +2,8 @@
 #include "Texturemanager.h"
 #include "Windowmanager.h"
 #include <iostream>
+#include "Noise.h"
+
 
 //place
 #include <vector>
@@ -16,22 +18,23 @@ int main()
 	srand(time(NULL));
 	sf::RenderWindow *window = &Windowmanager::getInstance().getWindow();
 
+	Noise noise;
+
+	
+	
 
 	vector<Tile*> tilevec;
-
-	for(int y = 0; y < 120;y++){
-		for(int x = 0; x < 180;x++){
-
-			tilevec.push_back(new Tile(x*6,y*6));
+	double seed = 0;
+	for(int y = 0; y < 1200;y++){
+		for(int x = 0; x < 1800;x++){
+			seed = noise.createNoise(x,y,0.4,150);
+			tilevec.push_back(new Tile(x*1,y*1,seed));
 		}
-
 	}
 
-    while (window->isOpen())
-    {
+    while (window->isOpen()){
         sf::Event event;
-        while (window->pollEvent(event))
-        {
+        while (window->pollEvent(event)){
             if (event.type == sf::Event::Closed)
                 window->close();
         }

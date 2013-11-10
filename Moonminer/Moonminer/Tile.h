@@ -10,7 +10,7 @@ class Tile{
 public:
 
 
-	Tile(int x, int y);
+	Tile(int x, int y,double seed);
 	~Tile();
 
 	void draw();
