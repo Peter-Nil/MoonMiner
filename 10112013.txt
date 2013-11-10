@@ -1,0 +1,33 @@
+
+Tiles
+
+ *Tile class basic 
+ *Utritning
+ *Kommer adderas mer till klassen när det är klar överblick.
+
+
+Tilefield
+ *ISOMETRISK i 1 1 1 
+		2 2 2
+	       3 3 3
+                4 4 4 format
+
+		\
+		/
+		\
+		/
+		\
+
+
+Musklicksalgoritm
+ *Ska fungera för följande format och ge resultat  0.0 1.0 2.0
+						     0.1 1.1 2.1
+					           0.2 1.2 2.2
+						     0.3 1.3 2.3	
+	
+
+
+Texturhanterare
+
+*Ladda in och skicka texturer (singleton?)
+*Nummer struktur?
