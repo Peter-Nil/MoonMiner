@@ -86,9 +86,13 @@
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Texturemanager.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="Windowmanager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Texturemanager.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="Windowmanager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cordination.h" />

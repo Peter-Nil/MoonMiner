@@ -38,3 +38,9 @@ sf::Texture &Texturemanager::getTexture(int s){
 	return mTextures.at(s);
 
 }
+
+
+int Texturemanager::getAmount(){
+
+	return mTextures.size();
+}
