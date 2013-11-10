@@ -85,6 +85,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Texturemanager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Texturemanager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cordination.h" />
