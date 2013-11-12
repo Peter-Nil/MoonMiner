@@ -23,7 +23,6 @@ protected:
 
 
 private:
-
 	sf::Sprite sprite;
 	sf::RenderWindow *window;
 

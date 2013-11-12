@@ -6,19 +6,24 @@
 #include <iostream>
 using namespace std;
 
-Tile::Tile(int x, int y){
+Tile::Tile(int x1, int y1)
+{
+	float x = float(x1), y = float(y1);
 	window = &Windowmanager::getInstance().getWindow();
 
 	
 	int p = rand()%Texturemanager::getInstance().getAmount();
 
 	sprite.setTexture(Texturemanager::getInstance().getTexture(p));
-	
-	sprite.setPosition(x,y);
+
+	sprite.setRotation(45);
+	sprite.setPosition(	( x + float( y1 % 2 ) / 2) * sprite.getGlobalBounds().width, 
+						( y - 1) * sprite.getGlobalBounds().height/2);
 }
 
 
-Tile::~Tile(){
+Tile::~Tile()
+{
 	delete window;
 
 }
@@ -26,9 +31,9 @@ Tile::~Tile(){
 
 
 
-void Tile::draw(){
-
+void Tile::draw()
+{
+	
 	window->draw(sprite);
-
 
 }

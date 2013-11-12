@@ -13,7 +13,8 @@ Texturemanager &Texturemanager::getInstance(){
 
 
 
-Texturemanager::Texturemanager(){
+Texturemanager::Texturemanager()
+{
 
 	ifstream is("resources/textures.txt");
 	string name;
@@ -33,14 +34,16 @@ Texturemanager::Texturemanager(){
 
 
 
-sf::Texture &Texturemanager::getTexture(int s){
+sf::Texture &Texturemanager::getTexture(int s)
+{
 
 	return mTextures.at(s);
 
 }
 
 
-int Texturemanager::getAmount(){
+int Texturemanager::getAmount()
+{
 
 	return mTextures.size();
 }

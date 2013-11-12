@@ -13,16 +13,16 @@ using namespace std;
 int main()
 {
 
-	srand(time(NULL));
+	srand(int(time(NULL)));
 	sf::RenderWindow *window = &Windowmanager::getInstance().getWindow();
-
 
 	vector<Tile*> tilevec;
 
-	for(int y = 0; y < 120;y++){
-		for(int x = 0; x < 180;x++){
-
-			tilevec.push_back(new Tile(x*6,y*6));
+	for(int y = 0; y < 120; y++)
+	{
+		for(int x = 0; x < 180; x++)
+		{
+			tilevec.push_back(new Tile(x, y));
 		}
 
 	}
@@ -39,11 +39,11 @@ int main()
         window->clear();
 
 
-		for(int i = 0;i < tilevec.size();i++){
+		for(int i = 0; i < int(tilevec.size()); i++)
+		{
 			tilevec.at(i)->draw();
 		}
 		//operations
-
        
 	
         window->display();
